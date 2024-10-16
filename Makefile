@@ -36,9 +36,9 @@ clean:
 .PHONY: build
 build:
 	docker build -f Dockerfile -t $(DOCKER_ACCOUNT)/$(DOCKER_IMAGE_NAME):$(DOCKER_TAG_NAME) .
-	chmod +x install_armcmd.sh
-	. ./install_armcmd.sh
-	chmod +x armcmd.sh
+	chmod +x install_ticmd.sh
+	. ./install_ticmd.sh
+	chmod +x ticmd.sh
 
 ## Tag docker images
 .PHONY: tag-images

@@ -1,4 +1,4 @@
-cat << EOF > armcmd.sh
+cat << EOF > ticmd.sh
 #!/bin/bash
 if [ -z "\$VERSION" ]
 then
