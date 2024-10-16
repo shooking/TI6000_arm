@@ -51,3 +51,4 @@ tag-images:
 publish: build tag-images
 	echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
 	docker push "${DOCKER_ACCOUNT}/${DOCKER_IMAGE_NAME}:${VERSION}"
+	docker push "${DOCKER_ACCOUNT}/${DOCKER_IMAGE_NAME}:latest"
