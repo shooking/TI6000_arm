@@ -36,8 +36,8 @@ clean:
 .PHONY: build
 build:
 	docker build -f Dockerfile -t $(DOCKER_ACCOUNT)/$(DOCKER_IMAGE_NAME):$(DOCKER_TAG_NAME) .
-	chmod +x install_ticmd
-	. ./install_ticmd
+	chmod +x install_ticmd.sh
+	. ./install_ticmd.sh
 	chmod +x ticmd
 
 ## Tag docker images
