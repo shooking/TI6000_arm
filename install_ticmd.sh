@@ -15,6 +15,3 @@ THEUSER=\$(id -u)
 THEGROUP=\$(id -g)
 docker run -it --rm  -v \${TI_FOLDER}:'/tmp' --user "\${THEUSER}:\${THEGROUP}" \${THEDOCKER} \$@
 EOF
-
-chmod +x ticmd
-
