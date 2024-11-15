@@ -1,4 +1,4 @@
-cat << EOF > ticmd.sh
+cat << EOF > ticmd
 #!/bin/bash
 if [ -z "\$VERSION" ]
 then
@@ -15,3 +15,6 @@ THEUSER=\$(id -u)
 THEGROUP=\$(id -g)
 docker run -it --rm  -v \${TI_FOLDER}:'/tmp' --user "\${THEUSER}:\${THEGROUP}" \${THEDOCKER} \$@
 EOF
+
+chmod +x ticmd
+
